@@ -2,36 +2,49 @@
   margin: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-gap: 20px; }
+  grid-gap: 20px;
+}
 
 /* demo purposes only */
 html {
-  font-size: 10px; }
-  html body {
+  font-size: 10px;
+
+  body {
     font-size: 1.2rem;
-    color: white; }
+    color: white;
+  }
+}
 
 * {
-  font-family: "Poppins", sans-serif; }
-
+  font-family: "Poppins", sans-serif;
+}
 .card {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   height: 150px;
-  transition: all .3s; }
-  .card img {
+  transition: all .3s;
+
+  img {
     width: 100%;
-    height: 100%; }
-  .card h3 {
+    height: 100%;
+  }
+
+  h3 {
     position: absolute;
     top: 0;
     left: 20px;
-    font-size: 1.6rem; }
-  .card p {
+    font-size: 1.6rem;
+  }
+
+  p {
     position: absolute;
     bottom: 0;
-    left: 20px; }
-  .card:hover {
-    transform: scale(1.08); }
+    left: 20px;
+  }
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
